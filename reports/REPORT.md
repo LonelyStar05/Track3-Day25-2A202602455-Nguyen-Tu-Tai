@@ -1,6 +1,6 @@
 # Lab 25B — Report
 
-**Họ tên / nhóm:** Nguyễn Tú Tài — MSV 2A202602455  **Commit:** 19e701a  **Điểm tự động (`make grade`):** 84 / 88 (4 điểm còn lại là SLO dữ liệu ẩn, chỉ giảng viên chấm)
+**Họ tên / nhóm:** Nguyễn Tú Tài — MSV 2A202602455  **Commit:** dabc751  **Điểm tự động (`make grade`):** 84 / 88 (4 điểm còn lại là SLO dữ liệu ẩn, chỉ giảng viên chấm)
 
 > Mọi số liệu lấy từ `reports/gameday/*.json`, `reports/workflows.json`, `reports/slo.json`, `reports/cache/*.json`
 > (seed mặc định 25), trừ khi ghi rõ là sweep nhiều seed.
