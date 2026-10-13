@@ -41,7 +41,7 @@ client:
     window_size: 20
     min_calls: 10
     failure_rate_threshold: 0.5
-    slow_call_s: 5.0
+    slow_call_s: 4.0              # healthy beta p99 ~4.1 s; alpha +3.5 s must trip
     slow_rate_threshold: 0.6
     open_duration_s: 10.0
     half_open_max_probes: 2
@@ -53,7 +53,7 @@ client:
 # wrong_answers_by_reason, tune each value and justify it in report section 8.
 # ----------------------------------------------------------------------------
 cache:
-  similarity_threshold: 0.80
-  ttl_s: 600
-  max_stale_s: 0
+  similarity_threshold: 0.92   # paraphrases ~0.95-0.98, near-miss intents ~0.83-0.86
+  ttl_s: 25                    # bounds outdated answers after a silent change (<= ~11 on shifted tapes)
+  max_stale_s: 300             # covers a 2-5 min outage on top of the TTL
   max_entries: 500
